@@ -3,9 +3,9 @@ title: "追番【新石纪】"
 excerpt: "<<新石纪>>动漫"
 
 categories:
-  - bilibili
+  - 新番
 tags:
-  - bilibili
+  - 视频
 videos:
   - ['第01集','https://dapian.video-yongjiu.com/share/fb89fd138b104dcf8e2077ad2a23954d']
   - ['第02集','https://dapian.video-yongjiu.com/share/b922ede9c9eb9eabec1c1fecbdecb45d']
