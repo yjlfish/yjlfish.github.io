@@ -1,43 +1,27 @@
+<link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css">
+<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+ <script src="https://unpkg.com/vssue/dist/vssue.github.min.js"></script>
+<div id="vssue"></div>
+<script>
+    new Vue({
+      el: '#vssue',
 
-<style>
-.gt-container .gt-header-textarea {
-  padding: 0.75em;
-  display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  min-height: 5.125em;
-  max-height: 15em;
-  border-radius: 5px;
-  border: 1px solid rgba(0,0,0,0.1);
-  font-size: 0.875em;
-  word-wrap: break-word;
-  resize: vertical;
-  background-color: #f6f6f6;
-  outline: none;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  color:red;
-}
-</style>
-<div id="gitalk-container"></div>
-<script type="text/javascript">
-    var gitalk = new Gitalk({
-                    clientID: '{{site.git_clientID}}', // GitHub Application Client ID
-                    clientSecret: '{{site.git_clientSecret}}', // GitHub Application Client Secret
-                    repo: '{{site.git_repo}}',     // 存放评论的仓库
-                    owner: '{{site.git_owner}}',          // 仓库的创建者，
-                    admin: ['{{ site.git_admin | join: "','" }}'],        // 如果仓库有多个人可以操作，那么在这里以数组形式写出
-                    id: location.pathname,      // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
-                    distractionFreeMode: true
-});
-gitalk.render('gitalk-container'); 
-window.onhashchange = function(event){
-      if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
-        location.reload()
-      }
-    }
-</script>
+      render: h => h('Vssue', {
+        props: {
+          // 在这里设置当前页面对应的 Issue 标题
+          title: '{{page.title}}',
+
+          // 在这里设置你使用的平台的 OAuth App 配置
+          options: {
+            owner: '{{site.git_owner}}',
+            repo: '{{site.git_repo}}',
+            clientId: '{{site.git_clientID}}',
+            clientSecret: '{{site.git_clientSecret}}', // 只有在使用某些平台时需要
+          },
+        }
+      })
+    })
+  </script>
 
 
 

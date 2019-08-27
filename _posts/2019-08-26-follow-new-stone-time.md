@@ -1,5 +1,6 @@
 ---
 title: "追番【新石纪】"
+excerpt: "<<新石纪>>动漫"
 
 categories:
   - bilibili
