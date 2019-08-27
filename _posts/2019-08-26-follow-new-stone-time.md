@@ -1,6 +1,13 @@
 ---
 title: "追番【新石纪】"
 excerpt: "<<新石纪>>动漫"
+header:
+  overlay_image: https://txyimg-1300036828.cos.ap-beijing.myqcloud.com/sucai/Snip20190827_5.jpg
+  og_image: /assets/images/page-header-og-image.png
+  caption: "友情链接: [**于健龙**](https://yujianlong.top)"
+  actions:
+    - label: "bilibili观看"
+      url: "https://www.bilibili.com/bangumi/play/ss27993"
 
 categories:
   - 新番
@@ -21,6 +28,8 @@ toc_sticky: true
 secretpage: false
 scrollgrace: true
 ---
+
+
 
 {% for vdo in page.videos %}
 ## {{ vdo[0] }}
