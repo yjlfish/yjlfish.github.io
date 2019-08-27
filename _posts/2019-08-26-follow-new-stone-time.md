@@ -16,15 +16,22 @@ videos:
   - ['第07集','https://dapian.video-yongjiu.com/share/95c3f1a8b262ec7a929a8739e21142d7']
   - ['第08集','https://dapian.video-yongjiu.com/share/09ab23b6b607496f095feed7aaa1259b']
 toc: true
+toc_label: 视频列表
 toc_sticky: true
 secretpage: false
 scrollgrace: true
 ---
+
 {% for vdo in page.videos %}
 ## {{ vdo[0] }}
 <div>
     <iframe src="{{ vdo[1] }}" width="100%" height="600px" frameborder="0" allowfullscreen></iframe>
 </div>
-  {% endfor %}
+{% endfor %}
+
+
+## 评论
+
+
 
 
