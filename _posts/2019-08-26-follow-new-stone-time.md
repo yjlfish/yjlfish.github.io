@@ -16,6 +16,7 @@ videos:
   - ['第07集','https://dapian.video-yongjiu.com/share/95c3f1a8b262ec7a929a8739e21142d7']
   - ['第08集','https://dapian.video-yongjiu.com/share/09ab23b6b607496f095feed7aaa1259b']
 toc: true
+toc_sticky: true
 secretpage: false
 scrollgrace: true
 ---
