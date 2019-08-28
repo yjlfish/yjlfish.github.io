@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Recipes"
+excerpt: "我的简历1"
 collection: recipes
 permalink: /resume1/
 author_profile: false
